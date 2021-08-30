@@ -1,0 +1,88 @@
+<app-navbar-user></app-navbar-user>
+<div class="container">
+    <div class="row p-3">
+        <div class="col-6 card-user">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Mes données</h5>
+                    <hr>
+                    <div class="mb-3">
+                        <label class="form-label">Prénom</label>
+                        <input id="input-nombres" class="form-control" value={{usuario.nombre}} disabled="true"
+                            [(ngModel)]="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nom</label>
+                        <input id="input-apellidos" class="form-control" value={{usuario.apellidos}} disabled="true"
+                            [(ngModel)]="apellidos" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Ref</label>
+                        <input id="input-rut" class="form-control" disabled="true" value={{usuario.rut}}
+                            [(ngModel)]="rut" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">e-mail</label>
+                        <input id="input-email" class="form-control" disabled="true" value={{usuario.email}}
+                            [(ngModel)]="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Numero Téléphone</label>
+                        <input id="input-telefono" class="form-control" disabled="true"
+                            value={{usuario.numero_telefono}} [(ngModel)]="numero_telefono" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" id="input-passwordt" style="display: none;">Mot de pass</label>
+                        <input id="input-password" class="form-control" value={{usuario.password}}
+                            [(ngModel)]="password" required style="display: none;" type="password">
+                    </div>
+                    <hr>
+                    <button type="submit" style="display:inline;" id="editar" class="btn btn-primary boton"
+                        (click)="editarDatos()">Edit Données</button>
+                    <button type="submit" style="display:none;" id="enviar" class="btn btn-primary"
+                        (click)="validarCamposUsuario()">Valider</button>
+                    <button type="submit" style="display:none;margin-left:5px;" id="cancelar" class="btn btn-warning"
+                        (click)="cancelarEdicion()">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 card-user">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Nouvelle Réclammation</h5>
+                    <hr>
+                    <!--div class="mb-3">
+                        <label class="form-label">Sujet:</label>
+                        <input class="form-control" [(ngModel)]="asuntoReclamo">
+                    </div -->
+                    <div class="form-group">
+                        <label class="form-label">Type:</label>
+                        <select id="type" name="typeReclamo" ngModel class="form-control">
+                          <option value="1">Propreté</option>
+                          <option value="2">Picine</option>
+                          <option value="3">Accées</option>
+                          <option value="4">Sécurité</option>
+                          <option value="5">Paiment</option>
+                          <option value="6">securité</option>
+                          <option value="100">Autre</option>
+                        </select>
+                      </div>
+                     <div class="mb-3">
+                        <label class="form-label">Sujet:</label>
+                        <input class="form-control" [(ngModel)]="asuntoReclamo">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea [(ngModel)]="textoReclamo" class="form-control" rows="12" cols="50"></textarea>
+                    </div>
+                    <hr>
+                    <button type="submit" class="btn btn-primary boton" (click)="agregarReclamo()">Ajout Réclamation </button>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col">
+                <app-complain-accordion [reclamos]="reclamos"></app-complain-accordion>
+            </div>
+        </div>
+    </div>

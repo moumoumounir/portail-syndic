@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div id="formContent">
+    <form>
+      <h2> Entrer Admin</h2>
+      <!-- p>Admin de prueba: admin@admin.com | Contraseña: admin</p -->
+      <input type="text" [(ngModel)]="email" placeholder="admin@admin.com" name="login">
+      <input type="password" [(ngModel)]="password" placeholder="admin" name="login">
+      <input type="submit" value="Entrer" (click)="login()">
+    </form>
+    <div id="formFooter">
+      <app-modal></app-modal>
+    </div>
+  </div>
+</div>

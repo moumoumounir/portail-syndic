@@ -1,0 +1,41 @@
+<app-navbar-user></app-navbar-user>
+<div class="container">
+        <div class="col-9 card-user">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Nouvelle Réclammation</h4>
+                    <!--div class="mb-3">
+                        <label class="form-label">Sujet:</label>
+                        <input class="form-control" [(ngModel)]="asuntoReclamo">
+                    </div -->
+                    <div class="form-group">
+                        <label class="form-label">Type:</label>
+                        <select id="type" name="typeReclamo" ngModel class="form-control">
+                          <option value="1">Propreté</option>
+                          <option value="2">Picine</option>
+                          <option value="3">Accées</option>
+                          <option value="4">Sécurité</option>
+                          <option value="5">Paiment</option>
+                          <option value="6">securité</option>
+                          <option value="100">Autre</option>
+                        </select>
+                      </div>
+                     <div class="mb-3">
+                        <label class="form-label">Sujet:</label>
+                        <input class="form-control" [(ngModel)]="asuntoReclamo">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea [(ngModel)]="textoReclamo" class="form-control" rows="3" cols="50"></textarea>
+                    </div>
+                  
+                    <button type="submit" class="btn btn-primary boton" (click)="agregarReclamo()">Ajout Réclamation </button>
+                </div>
+            </div>
+        </div>
+        <div class="row p-3">
+            <div class="col">
+                <app-complain-accordion [reclamos]="reclamos"></app-complain-accordion>
+            </div>
+        </div>
+    </div>

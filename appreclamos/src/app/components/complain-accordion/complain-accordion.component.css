@@ -1,0 +1,21 @@
+.accordion-button{
+    border:1px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgb(170, 170, 170);
+}
+
+.en-progreso{
+    background-color: #fffcef;
+    color:black;
+}
+
+.finalizado{
+    background-color:#eaf3ff;
+    color:black;
+}
+
+.con-error{
+    background-color:#ffe1eb;
+    color:black;
+}
