@@ -1,11 +1,6 @@
 <img src="LOGO-ResidanceYasmine2.png" width="500">
 
 
-<p align="center">
-  <img src="admin-report.png" width="75%" />
-</p>
-
-
 Application web développée en Angular pour la gestion des réclamations reçues , présentée à ses utilisateurs comme un helpdesk. Il permet à ses utilisateurs d'envoyer et de consulter des réclamations, et aux administrateurs de répondre et d'obtenir des statistiques sur les réclamations reçues selon leur statut et leur date de conformité.
 
 Pour mener à bien ce projet, développé durant le cours *Architecture de développement Web*, nous utilisons les langages TypeScript, JavaScript, HTML et CSS, en plus d'utiliser les bibliothèques json-server, jsonwebtoken, chart.js, ng2-charts, jsPDF et plus.
