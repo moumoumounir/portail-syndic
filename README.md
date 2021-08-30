@@ -1,8 +1,4 @@
-<img src="logo-escuela.png" width="500">
-
-# umayor-web-reclamos
-
-## Acerca de este repo
+<img src="LOGO-ResidanceYasmine2.png" width="500">
 
 
 <p align="center">
@@ -10,24 +6,23 @@
 </p>
 
 
-Aplicación web desarrollada en Angular para la gestión de los reclamos recibidos en la Universidad Mayor, presentada a sus usuarios como una mesa de ayuda. Permite a sus usuarios enviar y consultar reclamos, y a los administradores responder y obtener estadísticas de los reclamos recibidos según su estado y fecha de cumplimiento.
+Application web développée en Angular pour la gestion des réclamations reçues , présentée à ses utilisateurs comme un helpdesk. Il permet à ses utilisateurs d'envoyer et de consulter des réclamations, et aux administrateurs de répondre et d'obtenir des statistiques sur les réclamations reçues selon leur statut et leur date de conformité.
 
-Para la realización de este proyecto, desarrollado durante la asignatura *Arquitectura de desarrollo web*, utilizamos los lenguajes TypeScript, JavaScript, HTML y CSS, además de usar las librerías json-server, jsonwebtoken, chart.js, ng2-charts, jsPDF y más.
+Pour mener à bien ce projet, développé durant le cours *Architecture de développement Web*, nous utilisons les langages TypeScript, JavaScript, HTML et CSS, en plus d'utiliser les bibliothèques json-server, jsonwebtoken, chart.js, ng2-charts, jsPDF et plus.
 
-
-## Pasos para inicializar el proyecto
-Dentro de la carpeta ```appreclamos```, ejecutar el siguiente comando la primera vez:
-```
-npm install
-```
-Después, y para todas las ocasiones siguientes, ejecutar cada uno de los siguientes comandos en ventanas distintas de una terminal:
-```
+## Étapes pour initialiser le projet
+Dans le dossier `` `appreclamos```, exécutez la commande suivante une première fois :
+`` ''
+npm installer
+`` ''
+Ensuite, et pour toutes les occasions suivantes, exécutez chacune des commandes suivantes dans des fenêtres autres qu'un terminal :
+`` ''
 json-server --watch db.json
 ng serve --open
-nodemon server.js
-```
+serveur nodemon.js
+`` ''
 
-<p align="center">
-  <img src="landing.png" width="75%" />
-</p>
+
+
+
 "#portail-syndic" 
